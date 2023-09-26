@@ -1,0 +1,31 @@
+{% extends 'base/base.html' %}
+{% load static %}
+{% block title %}Home | AI Image Generator{% endblock title %}
+{% block body %}
+<div id="main_wrap">
+    <div class="row m-0">
+        <div class="col-12 d-flex justify-content-center align-items-center" style="height: 85vh;">
+            <div class="cover-content">
+                <h1>Text to Images with AI Image Generator</h1>
+                <p>Convert words to images in secounds with fotor's free AI image generator. Input the text prompts and
+                    transfer your imagination into arts now.</p>
+                <form class="d-flex p-5" style="padding-bottom: 0px !important;">
+                    <input type="text" class="form-control p-3" id="search-input" name="q"
+                        placeholder="Search for images">
+                    <button type="submit" class="btn btn-primary"
+                        style="margin-left: 15px;padding-right: 50px;padding-left: 50px;">Generator</button>
+                </form>
+                <div class="ready_quick_q">
+                    <p><i class="fa-solid fa-arrows-rotate"></i> No inspiration? Try these:
+                        <a href="?q=A dwarf in autumn with a pumpkn light and maple laves">A
+                            dwarf in autumn with a pumpkn light and maple laves</a>
+                        <a href="?q=Fireworks in the canyon">Fireworks in the canyon</a>
+                        <a href="?q=A man with delicate facial features">A man with delicate facial features</a>
+                        <a href="?q=Highly detailed partrait of a walf">Highly detailed partrait of a walf</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock body %}

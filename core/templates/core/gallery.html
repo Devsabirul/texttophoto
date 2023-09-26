@@ -1,0 +1,13 @@
+{% extends 'base/base.html' %}
+{% block title %}Gallery | AI photo{% endblock title %}
+{% block body %}
+
+<div class="container_">
+    {% for image in all_datas %}
+    <div class="box">
+        <img src="{{image.src}}" alt="">
+    </div>
+    {% endfor %}
+</div>
+
+{% endblock body %}
